@@ -21,6 +21,7 @@ NS = {
 
 skeleton_structure = {}
 
+
 def find_rule_path(element, target_rule_id, ns, current_path=None):
     if current_path is None:
         current_path = []
@@ -33,15 +34,14 @@ def find_rule_path(element, target_rule_id, ns, current_path=None):
     if tag == "Rule" and element.get("id") == target_rule_id:
         return current_path
 
-
     for child in element:
-        result = find_rule_path(child, target_rule_id, NS, current_path)
+        result = find_rule_path(child, target_rule_id, ns, current_path)
         if result is not None:
             return result
     return None
 
 
-def match(policy_id : str) -> list[dict[str, str]]:
+def match(policy_id: str) -> list[dict[str, str]]:
     matches = []
     with open("./output/profiles.json", "r") as f:
         profiles = json.load(f)
@@ -57,7 +57,11 @@ def main() -> None:
     root = tree.getroot()
     rules_collection = []
     profile_collection = []
-    benchmark = root.find(".//xccdf:Benchmark", NS) if root is not None else ElementTree.Element("xccdf:Benchmark", NS)
+    benchmark = (
+        root.find(".//xccdf:Benchmark", NS)
+        if root is not None
+        else ElementTree.Element("xccdf:Benchmark", NS)
+    )
     profiles = benchmark.findall(".//xccdf:Profile", NS) if benchmark is not None else []
     for profile_elem in profiles:
         select_rules = []
@@ -67,21 +71,21 @@ def main() -> None:
             if select.get("selected") == "true":
                 select_rules.append(select.get("idref"))
         for rv in profile_elem.findall(".//xccdf:refine-value", NS):
-            refine_values.append({"idref": rv.get("idref"), "selector": rv.get("selector"), })
+            refine_values.append({"idref": rv.get("idref"), "selector": rv.get("selector")})
 
+        title_elem = profile_elem.find("xccdf:title", NS)
+        desc_elem = profile_elem.find("xccdf:description", NS)
         profile_collection.append({
             "id": profile_elem.get("id"),
-            "title": profile_elem.find("xccdf:title", NS).text if profile_elem.find("xccdf:title", NS) is not None else "",
-            "description": profile_elem.find("xccdf:description", NS).text if profile_elem.find("xccdf:description", NS) is not None else "",
-            "selected_rules" : select_rules,
-            "refine_values" : refine_values,
+            "title": title_elem.text if title_elem is not None else "",
+            "description": desc_elem.text if desc_elem is not None else "",
+            "selected_rules": select_rules,
+            "refine_values": refine_values,
         })
-
 
     os.makedirs(os.path.dirname(FILE_PATH), exist_ok=True)
     with open("./output/profiles.json", "w") as f:
         json.dump(profile_collection, f, indent=4, ensure_ascii=True)
-
 
     rules = benchmark.findall(".//xccdf:Rule", NS) if benchmark is not None else []
     for rule in rules:
@@ -90,14 +94,29 @@ def main() -> None:
         title_elem = rule.find("xccdf:title", NS) if rule is not None else ""
         title_text = title_elem.text if title_elem is not None else ""
         description_elem = rule.find("xccdf:description", NS) if rule is not None else ""
-        description = ''.join(description_elem.itertext()).strip() if description_elem is not None else ""
+        description = (
+            ''.join(description_elem.itertext()).strip()
+            if description_elem is not None else ""
+        )
         rationale_elem = rule.find("xccdf:rationale", NS) if rule is not None else ""
-        rationale = ''.join(rationale_elem.itertext()).strip() if rationale_elem is not None else ""
-        rules_collection.append({"id": rule_id, "severity" : severity, "title" : title_text, "description" : description, "rationale" : rationale, "profiles" : match(rule_id), "groups" : find_rule_path(benchmark, rule_id, NS)})
+        rationale = (
+            ''.join(rationale_elem.itertext()).strip()
+            if rationale_elem is not None else ""
+        )
+        rules_collection.append({
+            "id": rule_id,
+            "severity": severity,
+            "title": title_text,
+            "description": description,
+            "rationale": rationale,
+            "profiles": match(rule_id),
+            "groups": find_rule_path(benchmark, rule_id, NS),
+        })
 
     os.makedirs(FILE_PATH, exist_ok=True)
     with open("./output/policies.json", "w") as f:
         json.dump(rules_collection, f, indent=2, ensure_ascii=True)
+
 
 if __name__ == '__main__':
     main()
