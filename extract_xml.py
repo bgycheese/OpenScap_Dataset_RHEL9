@@ -1,7 +1,6 @@
 import json
 import os
 import xml.etree.ElementTree as ET
-from xml.etree import ElementTree
 
 # TODO: change the source location to default when downloaded on VHI systems
 SOURCE_FILE = "./source/ssg-rhel9-ds.xml"
@@ -23,7 +22,7 @@ def find_rule_path(element, target_rule_id, ns, current_path=None):
     tag = element.tag.split('}')[-1]
 
     if tag == "Group":
-        current_path = current_path + [element.get('id')]
+        current_path = current_path + [element.get('id')[35:]]
 
     if tag == "Rule" and element.get("id") == target_rule_id:
         return current_path
@@ -70,7 +69,7 @@ def main() -> None:
         title_elem = profile_elem.find("xccdf:title", NS)
         desc_elem = profile_elem.find("xccdf:description", NS)
         profile_collection.append({
-            "id": profile_elem.get("id"),
+            "id": profile_elem.get("id")[37:],
             "title": title_elem.text if title_elem is not None else "",
             "description": desc_elem.text if desc_elem is not None else "",
             "selected_rules": select_rules,

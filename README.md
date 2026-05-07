@@ -3,7 +3,7 @@
 ## Overview
 
 This file is a **SCAP Source Data Stream** published by the
-[SCAP Security Guide](https://github.com/ComplianceAsCode/content) project.
+[SCAP Security Guide](https://github.com/ComplianceAsCode/content).
 It contains the authoritative, machine-readable security-compliance content for
 **Red Hat Enterprise Linux 9**: 1467 hardening rules, organized into 19 named
 compliance profiles (CIS, DISA STIG, ANSSI, HIPAA, PCI-DSS, etc.), along with

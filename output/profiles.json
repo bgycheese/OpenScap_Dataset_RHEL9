@@ -1,6 +1,6 @@
 [
     {
-        "id": "xccdf_org.ssgproject.content_profile_anssi_bp28_enhanced",
+        "id": "anssi_bp28_enhanced",
         "title": "ANSSI-BP-028 (enhanced)",
         "description": "This profile contains configurations that align to ANSSI-BP-028 v2.0 at the enhanced hardening level.\n\nANSSI is the French National Information Security Agency, and stands for Agence nationale de la s\u00e9curit\u00e9 des syst\u00e8mes d'information.\nANSSI-BP-028 is a configuration recommendation for GNU/Linux systems.\n\nA copy of the ANSSI-BP-028 can be found at the ANSSI website:\nhttps://www.ssi.gouv.fr/administration/guide/recommandations-de-securite-relatives-a-un-systeme-gnulinux/\n\nAn English version of the ANSSI-BP-028 can also be found at the ANSSI website:\nhttps://cyber.gouv.fr/publications/configuration-recommendations-gnulinux-system",
         "selected_rules": [
@@ -464,7 +464,7 @@
         ]
     },
     {
-        "id": "xccdf_org.ssgproject.content_profile_anssi_bp28_high",
+        "id": "anssi_bp28_high",
         "title": "ANSSI-BP-028 (high)",
         "description": "This profile contains configurations that align to ANSSI-BP-028 v2.0 at the high hardening level.\n\nANSSI is the French National Information Security Agency, and stands for Agence nationale de la s\u00e9curit\u00e9 des syst\u00e8mes d'information.\nANSSI-BP-028 is a configuration recommendation for GNU/Linux systems.\n\nA copy of the ANSSI-BP-028 can be found at the ANSSI website:\nhttps://www.ssi.gouv.fr/administration/guide/recommandations-de-securite-relatives-a-un-systeme-gnulinux/\n\nAn English version of the ANSSI-BP-028 can also be found at the ANSSI website:\nhttps://cyber.gouv.fr/publications/configuration-recommendations-gnulinux-system",
         "selected_rules": [
@@ -1028,7 +1028,7 @@
         ]
     },
     {
-        "id": "xccdf_org.ssgproject.content_profile_anssi_bp28_intermediary",
+        "id": "anssi_bp28_intermediary",
         "title": "ANSSI-BP-028 (intermediary)",
         "description": "This profile contains configurations that align to ANSSI-BP-028 v2.0 at the intermediary hardening level.\n\nANSSI is the French National Information Security Agency, and stands for Agence nationale de la s\u00e9curit\u00e9 des syst\u00e8mes d'information.\nANSSI-BP-028 is a configuration recommendation for GNU/Linux systems.\n\nA copy of the ANSSI-BP-028 can be found at the ANSSI website:\nhttps://www.ssi.gouv.fr/administration/guide/recommandations-de-securite-relatives-a-un-systeme-gnulinux/\n\nAn English version of the ANSSI-BP-028 can also be found at the ANSSI website:\nhttps://cyber.gouv.fr/publications/configuration-recommendations-gnulinux-system",
         "selected_rules": [
@@ -1400,7 +1400,7 @@
         ]
     },
     {
-        "id": "xccdf_org.ssgproject.content_profile_anssi_bp28_minimal",
+        "id": "anssi_bp28_minimal",
         "title": "ANSSI-BP-028 (minimal)",
         "description": "This profile contains configurations that align to ANSSI-BP-028 v2.0 at the minimal hardening level.\n\nANSSI is the French National Information Security Agency, and stands for Agence nationale de la s\u00e9curit\u00e9 des syst\u00e8mes d'information.\nANSSI-BP-028 is a configuration recommendation for GNU/Linux systems.\n\nA copy of the ANSSI-BP-028 can be found at the ANSSI website:\nhttps://www.ssi.gouv.fr/administration/guide/recommandations-de-securite-relatives-a-un-systeme-gnulinux/\n\nAn English version of the ANSSI-BP-028 can also be found at the ANSSI website:\nhttps://cyber.gouv.fr/publications/configuration-recommendations-gnulinux-system",
         "selected_rules": [
@@ -1520,7 +1520,7 @@
         ]
     },
     {
-        "id": "xccdf_org.ssgproject.content_profile_ccn_advanced",
+        "id": "ccn_advanced",
         "title": "Centro Criptol\u00f3gico Nacional (CCN) - STIC for Red Hat Enterprise Linux 9 - Advanced",
         "description": "This profile defines a baseline that aligns with the \"Advanced\" configuration of the\nCCN-STIC-610A22 Guide issued by the National Cryptological Center of Spain in 2022-10.\n\nThe CCN-STIC-610A22 guide includes hardening settings for Red Hat Enterprise Linux 9 at basic,\nintermediate, and advanced levels.",
         "selected_rules": [
@@ -1761,7 +1761,7 @@
         ]
     },
     {
-        "id": "xccdf_org.ssgproject.content_profile_ccn_basic",
+        "id": "ccn_basic",
         "title": "Centro Criptol\u00f3gico Nacional (CCN) - STIC for Red Hat Enterprise Linux 9 - Basic",
         "description": "This profile defines a baseline that aligns with the \"Basic\" configuration of the\nCCN-STIC-610A22 Guide issued by the National Cryptological Center of Spain in 2022-10.\n\nThe CCN-STIC-610A22 guide includes hardening settings for Red Hat Enterprise Linux 9 at basic,\nintermediate, and advanced levels.",
         "selected_rules": [
@@ -1915,7 +1915,7 @@
         ]
     },
     {
-        "id": "xccdf_org.ssgproject.content_profile_ccn_intermediate",
+        "id": "ccn_intermediate",
         "title": "Centro Criptol\u00f3gico Nacional (CCN) - STIC for Red Hat Enterprise Linux 9 - Intermediate",
         "description": "This profile defines a baseline that aligns with the \"Intermediate\" configuration of the\nCCN-STIC-610A22 Guide issued by the National Cryptological Center of Spain in 2022-10.\n\nThe CCN-STIC-610A22 guide includes hardening settings for Red Hat Enterprise Linux 9 at basic,\nintermediate, and advanced levels.",
         "selected_rules": [
@@ -2127,7 +2127,7 @@
         ]
     },
     {
-        "id": "xccdf_org.ssgproject.content_profile_cis",
+        "id": "cis",
         "title": "CIS Red Hat Enterprise Linux 9 Benchmark for Level 2 - Server",
         "description": "This profile defines a baseline that aligns to the \"Level 2 - Server\"\nconfiguration from the Center for Internet Security\u00ae Red Hat Enterprise\nLinux 9 Benchmark\u2122, v1.0.0, released 2022-11-28.\n\nThis profile includes Center for Internet Security\u00ae\nRed Hat Enterprise Linux 9 CIS Benchmarks\u2122 content.",
         "selected_rules": [
@@ -2732,7 +2732,7 @@
         ]
     },
     {
-        "id": "xccdf_org.ssgproject.content_profile_cis_server_l1",
+        "id": "cis_server_l1",
         "title": "CIS Red Hat Enterprise Linux 9 Benchmark for Level 1 - Server",
         "description": "This profile defines a baseline that aligns to the \"Level 1 - Server\"\nconfiguration from the Center for Internet Security\u00ae Red Hat Enterprise\nLinux 9 Benchmark\u2122, v1.0.0, released 2022-11-28.\n\nThis profile includes Center for Internet Security\u00ae\nRed Hat Enterprise Linux 9 CIS Benchmarks\u2122 content.",
         "selected_rules": [
@@ -3223,7 +3223,7 @@
         ]
     },
     {
-        "id": "xccdf_org.ssgproject.content_profile_cis_workstation_l1",
+        "id": "cis_workstation_l1",
         "title": "CIS Red Hat Enterprise Linux 9 Benchmark for Level 1 - Workstation",
         "description": "This profile defines a baseline that aligns to the \"Level 1 - Workstation\"\nconfiguration from the Center for Internet Security\u00ae Red Hat Enterprise\nLinux 9 Benchmark\u2122, v1.0.0, released 2022-11-28.\n\nThis profile includes Center for Internet Security\u00ae\nRed Hat Enterprise Linux 9 CIS Benchmarks\u2122 content.",
         "selected_rules": [
@@ -3710,7 +3710,7 @@
         ]
     },
     {
-        "id": "xccdf_org.ssgproject.content_profile_cis_workstation_l2",
+        "id": "cis_workstation_l2",
         "title": "CIS Red Hat Enterprise Linux 9 Benchmark for Level 2 - Workstation",
         "description": "This profile defines a baseline that aligns to the \"Level 2 - Workstation\"\nconfiguration from the Center for Internet Security\u00ae Red Hat Enterprise\nLinux 9 Benchmark\u2122, v1.0.0, released 2022-11-28.\n\nThis profile includes Center for Internet Security\u00ae\nRed Hat Enterprise Linux 9 CIS Benchmarks\u2122 content.",
         "selected_rules": [
@@ -4309,7 +4309,7 @@
         ]
     },
     {
-        "id": "xccdf_org.ssgproject.content_profile_cui",
+        "id": "cui",
         "title": "DRAFT - Unclassified Information in Non-federal Information Systems and Organizations (NIST 800-171)",
         "description": "From NIST 800-171, Section 2.2:\nSecurity requirements for protecting the confidentiality of CUI in nonfederal\ninformation systems and organizations have a well-defined structure that\nconsists of:\n\n(i) a basic security requirements section;\n(ii) a derived security requirements section.\n\nThe basic security requirements are obtained from FIPS Publication 200, which\nprovides the high-level and fundamental security requirements for federal\ninformation and information systems. The derived security requirements, which\nsupplement the basic security requirements, are taken from the security controls\nin NIST Special Publication 800-53.\n\nThis profile configures Red Hat Enterprise Linux 9 to the NIST Special\nPublication 800-53 controls identified for securing Controlled Unclassified\nInformation (CUI).\"",
         "selected_rules": [
@@ -4538,7 +4538,7 @@
         ]
     },
     {
-        "id": "xccdf_org.ssgproject.content_profile_e8",
+        "id": "e8",
         "title": "Australian Cyber Security Centre (ACSC) Essential Eight",
         "description": "This profile contains configuration checks for Red Hat Enterprise Linux 9\nthat align to the Australian Cyber Security Centre (ACSC) Essential Eight.\n\nA copy of the Essential Eight in Linux Environments guide can be found at the\nACSC website:\n\nhttps://www.cyber.gov.au/acsc/view-all-content/publications/hardening-linux-workstations-and-servers",
         "selected_rules": [
@@ -4663,7 +4663,7 @@
         ]
     },
     {
-        "id": "xccdf_org.ssgproject.content_profile_hipaa",
+        "id": "hipaa",
         "title": "Health Insurance Portability and Accountability Act (HIPAA)",
         "description": "The HIPAA Security Rule establishes U.S. national standards to protect individuals\u2019\nelectronic personal health information that is created, received, used, or\nmaintained by a covered entity. The Security Rule requires appropriate\nadministrative, physical and technical safeguards to ensure the\nconfidentiality, integrity, and security of electronic protected health\ninformation.\n\nThis profile configures Red Hat Enterprise Linux 9 to the HIPAA Security\nRule identified for securing of electronic protected health information.\nUse of this profile in no way guarantees or makes claims against legal compliance against the HIPAA Security Rule(s).   ",
         "selected_rules": [
@@ -4827,7 +4827,7 @@
         ]
     },
     {
-        "id": "xccdf_org.ssgproject.content_profile_ism_o",
+        "id": "ism_o",
         "title": "Australian Cyber Security Centre (ACSC) ISM Official",
         "description": "This profile contains configuration checks for Red Hat Enterprise Linux 9\nthat align to the Australian Cyber Security Centre (ACSC) Information Security Manual (ISM)\nwith the applicability marking of OFFICIAL.\n\nThe ISM uses a risk-based approach to cyber security. This profile provides a guide to aligning \nRed Hat Enterprise Linux security controls with the ISM, which can be used to select controls \nspecific to an organisation's security posture and risk profile.\n\nA copy of the ISM can be found at the ACSC website:\n\nhttps://www.cyber.gov.au/ism",
         "selected_rules": [
@@ -5022,7 +5022,7 @@
         ]
     },
     {
-        "id": "xccdf_org.ssgproject.content_profile_ospp",
+        "id": "ospp",
         "title": "Protection Profile for General Purpose Operating Systems",
         "description": "This profile is part of Red Hat Enterprise Linux 9 Common Criteria Guidance\ndocumentation for Target of Evaluation based on Protection Profile for\nGeneral Purpose Operating Systems (OSPP) version 4.3 and Functional\nPackage for SSH version 1.0.\n\nWhere appropriate, CNSSI 1253 or DoD-specific values are used for\nconfiguration, based on Configuration Annex to the OSPP.",
         "selected_rules": [
@@ -5247,7 +5247,7 @@
         ]
     },
     {
-        "id": "xccdf_org.ssgproject.content_profile_pci-dss",
+        "id": "pci-dss",
         "title": "PCI-DSS v4.0 Control Baseline for Red Hat Enterprise Linux 9",
         "description": "Payment Card Industry - Data Security Standard (PCI-DSS) is a set of\nsecurity standards designed to ensure the secure handling of payment card\ndata, with the goal of preventing data breaches and protecting sensitive\nfinancial information.\n\nThis profile ensures Red Hat Enterprise Linux 9 is configured in alignment\nwith PCI-DSS v4.0 requirements.",
         "selected_rules": [
@@ -5616,7 +5616,7 @@
         ]
     },
     {
-        "id": "xccdf_org.ssgproject.content_profile_stig",
+        "id": "stig",
         "title": "DISA STIG for Red Hat Enterprise Linux 9",
         "description": "This profile contains configuration checks that align to the\nDISA STIG for Red Hat Enterprise Linux 9 V1R3.\n\nIn addition to being applicable to Red Hat Enterprise Linux 9, DISA recognizes this\nconfiguration baseline as applicable to the operating system tier of\nRed Hat technologies that are based on Red Hat Enterprise Linux 9, such as:\n\n- Red Hat Enterprise Linux Server\n- Red Hat Enterprise Linux Workstation and Desktop\n- Red Hat Enterprise Linux for HPC\n- Red Hat Storage\n- Red Hat Containers with a Red Hat Enterprise Linux 9 image",
         "selected_rules": [
@@ -6333,7 +6333,7 @@
         ]
     },
     {
-        "id": "xccdf_org.ssgproject.content_profile_stig_gui",
+        "id": "stig_gui",
         "title": "DISA STIG with GUI for Red Hat Enterprise Linux 9",
         "description": "This profile contains configuration checks that align to the\nDISA STIG for Red Hat Enterprise Linux 9 V1R3.\n\n\nIn addition to being applicable to Red Hat Enterprise Linux 9, DISA recognizes this\nconfiguration baseline as applicable to the operating system tier of\nRed Hat technologies that are based on Red Hat Enterprise Linux 9, such as:\n\n- Red Hat Enterprise Linux Server\n- Red Hat Enterprise Linux Workstation and Desktop\n- Red Hat Enterprise Linux for HPC\n- Red Hat Storage\n- Red Hat Containers with a Red Hat Enterprise Linux 9 image\n\nWarning: The installation and use of a Graphical User Interface (GUI)\nincreases your attack vector and decreases your overall security posture. If\nyour Information Systems Security Officer (ISSO) lacks a documented operational\nrequirement for a graphical user interface, please consider using the\nstandard DISA STIG for Red Hat Enterprise Linux 9 profile.",
         "selected_rules": [
