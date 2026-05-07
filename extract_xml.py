@@ -8,15 +8,9 @@ SOURCE_FILE = "./source/ssg-rhel9-ds.xml"
 FILE_PATH = "./output/"
 
 NS = {
-    # --- you will query these ---
+    # --- you will query this --- 
     'xccdf': 'http://checklists.nist.gov/xccdf/1.2',  # Rules, Profiles, Groups, Values
-    'oval': 'http://oval.mitre.org/XMLSchema/oval-definitions-5',  # OVAL definitions
-    'ind': 'http://oval.mitre.org/XMLSchema/oval-definitions-5#independent',
-    'linux': 'http://oval.mitre.org/XMLSchema/oval-definitions-5#linux',
-    'unix': 'http://oval.mitre.org/XMLSchema/oval-definitions-5#unix',
-    'ocil': 'http://scap.nist.gov/schema/ocil/2.0',  # Manual checks
-    'ds': 'http://scap.nist.gov/schema/scap/source/1.2',  # Wrapper structure
-    'cpe': 'http://cpe.mitre.org/dictionary/2.0',  # Platform dict
+    # Perhaps can add more elements like oval
 }
 
 skeleton_structure = {}
